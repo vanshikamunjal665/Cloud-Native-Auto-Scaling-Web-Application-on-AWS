@@ -45,3 +45,11 @@ output "backend_ecr_repository_url" {
 output "frontend_ecr_repository_url" {
   value = aws_ecr_repository.frontend.repository_url
 }
+
+output "backend_asg_name" {
+  value = aws_autoscaling_group.backend.name
+}
+
+output "backend_launch_template_id" {
+  value = aws_launch_template.backend.id
+}
